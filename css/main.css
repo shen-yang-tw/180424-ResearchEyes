@@ -162,7 +162,7 @@ ol.listDecimalCh {list-style-type:cjk-ideographic;}
 .list_striped>li:first-child {border-top: 1px solid #E5E5E5;}
 .list_striped>li {padding: 5px 5px; border-bottom: 1px solid #E5E5E5; position:relative; z-index:1;}
 .list_striped>li:nth-of-type(odd) {background: #fafafa;}
-.listDecimal {list-style: none;}
+.listDecimal {list-style-type: none; counter-reset: listDecimalCounter; padding: 0;}
 .listDecimal>li:before {display:block; counter-increment: listDecimalCounter; content: counter(listDecimalCounter) ". ";}
 .list_line>li:not(:last-child):after {content: "|"; padding:0 10px; vertical-align: 2px;}
 .listFaIcon_indent {padding-left: 1.25rem; text-indent: -1.25rem;}
@@ -391,6 +391,7 @@ img[src=""] {display: none;}
 }
 .bg_img_top {
 	background: url(https://picsum.photos/g/200/300) no-repeat center top; background-size: 100%;
+	height: 80px;
 }
 /* End Pre Style
 ---------------------------------------------------- */

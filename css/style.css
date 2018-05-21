@@ -135,7 +135,7 @@ ol.listDecimalRow.badge>li:before {background: #028ac4;}
   margin-bottom: 95px;
 }
 #news.card_bgTop .padding_medium {
-  margin-bottom: 160px;
+  /*margin-bottom: 160px;*/
 }
 .truncating_striped h6.indent_remove {
   margin-top: -20px !important;
