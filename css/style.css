@@ -150,6 +150,18 @@ ol.listDecimalRow.badge>li:before {background: #028ac4;}
     line-height: 1.5rem;
 }
 
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 268px !important;
+}
+.index #searchBar[data-uk-sticky].uk-active .uk-overlay-panel {
+    border-radius: 0 0 5px 5px;
+}
+.index #searchBar[data-uk-sticky].uk-active .searchBar {
+    box-shadow: 0px 3px 4px 0 rgba(0, 0, 0, 0.7);
+}
+.index #searchBar[data-uk-sticky].uk-active .searchBar .bg_white.opacity90 {
+  opacity: 1;
+}
 footer, footer a {color: white !important;}
 
 /* Uikit Style
@@ -180,10 +192,47 @@ footer, footer a {color: white !important;}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Style */
 
 
+@media (min-width:360px) {
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 224px !important;
+}
+}
+
+@media (min-width:375px) {
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 222px !important;
+}
+}
+
+@media (min-width:442px) {
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 194px !important;
+}
+}
+
 @media (min-width:480px) {
+.index .logo img {
+    width: auto;
+    max-height: 31px;
+}
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 212px !important;
+}
+}
+
+@media (min-width:516px) {
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 195px !important;
+}
 }
 
 @media (min-width:768px) {
+.index .logo img {
+    max-height: 36.8px;
+}
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 198px !important;
+}
 }
 
 @media (min-width:960px) {
@@ -193,9 +242,28 @@ footer, footer a {color: white !important;}
 .bg_secondary .max_height:after {
     background: linear-gradient(to top, rgb(239, 110, 0) 85%, rgba(255, 255, 255, 0) 100%);
 }
+.index .logo img {
+    max-height: 33.7px;
+}
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 209px !important;
+}
+}
+
+@media (min-width:995px) {
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 190px !important;
+}
 }
 
 @media (min-width:1220px) {
+.index .logo img {
+    width: 100%;
+    max-height: inherit;
+}
+.index #searchBar[data-uk-sticky].uk-active {
+    top: 200px !important;
+}
 }
 
 @media (min-width:1350px) {
@@ -203,7 +271,7 @@ footer, footer a {color: white !important;}
 
 /* ----------- IE10+ ----------- */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-.searchBar {left: calc(-50%/2);}
+.index .searchBar {left: calc(-50%/2);}
 }
 
 /* ----------- iPhone 4 and 4S ----------- */

@@ -26,16 +26,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="top" class="bg_lightGrey">
+<body id="top" class="bg_lightGrey index">
   <div class="gotoTop uk-visible-small" data-uk-sticky="{top:-250, animation: 'uk-animation-slide-top'}"><a href="#top" title="Go to top"><i class="fas fa-chevron-up fa-fw"></i></a></div>
   <header id="header" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom'}">
-    <div class="uk-position-relative uk-position-z-index">
+    <div class="uk-position-relative">
       <div class="bg_img uk-overlay-panel">
         <div class="uk-cover-background" style="height: 180px; background-image: url(img/header.png);">
           <img class="uk-invisible" src="img/blank.gif" alt="#" title="#">
         </div>
       </div>
-      <div class="uk-position-relative uk-position-z-index">
+      <div class="uk-position-relative">
         <div class="bg_primary opacity90 uk-overlay-panel uk-padding-remove"></div>
         <nav class="uk-container uk-container-center uk-position-relative uk-position-z-index">
           <ul class="topList list_horizontal list_line color_white uk-text-center">
@@ -125,77 +125,79 @@
   <div class="banner box_shadow3">
     <div class="uk-cover-background uk-position-relative" style="height: 300px; background-image: url(img/banner.jpg);">
       <img class="uk-invisible" src="img/blank.gif" alt="#" title="#">
-      <div class="padding_medium uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-        <div class="searchBar padding_large uk-width-large-1-2 uk-container uk-container-center uk-position-relative">
-          <div class="bg_white opacity90 uk-border-rounded uk-overlay-panel"></div>
-          <form class="uk-form uk-position-relative">
-            <div class="tabBar_switcher">
-              <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher'}">
-                <li>
-                  <a href="#">進階查詢</a>
-                </li>
-                <li>
-                  <a href="#">資源探索</a>
-                </li>
-                <li>
-                  <a href="#">Pubmed</a>
-                </li>
-              </ul>
-              <div class="uk-margin">
-                <ul id="switcher" class="uk-switcher uk-margin">
+      <div id="searchBar" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom'}">
+        <div class="padding_medium uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+          <div class="searchBar box_shadow3 padding_large uk-width-large-1-2 uk-container uk-container-center uk-position-relative">
+            <div class="bg_white opacity90 uk-border-rounded uk-overlay-panel"></div>
+            <form class="uk-form uk-position-relative">
+              <div class="tabBar_switcher">
+                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher'}">
                   <li>
-                    <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                      <div class="uk-width-3-10 uk-width-small-3-10">
-                        <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search">
-                          <option>全部</option>
-                        </select>
-                      </div>
-                      <div class="uk-width-4-10 uk-width-small-5-10">
-                        <input id="search" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                      </div>
-                      <div class="uk-width-3-10 uk-width-small-2-10">
-                        <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                      </div>
-                    </div>
-                    <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">science</a></span><span class="commaCH"><a class="linkline" href="#" title="#">華藝</a></span><span class="commaCH"><a class="linkline" href="#" title="#">nature</a></span></p>
+                    <a href="#">進階查詢</a>
                   </li>
                   <li>
-                    <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                      <div class="uk-width-3-10 uk-width-small-3-10">
-                        <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search">
-                          <option>全部</option>
-                        </select>
-                      </div>
-                      <div class="uk-width-4-10 uk-width-small-5-10">
-                        <input id="search" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                      </div>
-                      <div class="uk-width-3-10 uk-width-small-2-10">
-                        <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                      </div>
-                    </div>
-                    <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">生物</a></span><span class="commaCH"><a class="linkline" href="#" title="#">月旦</a></span><span class="commaCH"><a class="linkline" href="#" title="#">中國</a></span></p>
+                    <a href="#">資源探索</a>
                   </li>
                   <li>
-                    <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                      <div class="uk-width-3-10 uk-width-small-3-10">
-                        <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search">
-                          <option>全部</option>
-                        </select>
-                      </div>
-                      <div class="uk-width-4-10 uk-width-small-5-10">
-                        <input id="search" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                      </div>
-                      <div class="uk-width-3-10 uk-width-small-2-10">
-                        <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                      </div>
-                    </div>
-                    <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">CNKI</a></span><span class="commaCH"><a class="linkline" href="#" title="#">Democracy</a></span><span class="commaCH"><a class="linkline" href="#" title="#">Web of science</a></span></p>
+                    <a href="#">Pubmed</a>
                   </li>
                 </ul>
+                <div class="uk-margin">
+                  <ul id="switcher" class="uk-switcher uk-margin">
+                    <li>
+                      <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
+                        <div class="uk-width-3-10 uk-width-small-3-10">
+                          <select class="bg_whiteOpacity9 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search">
+                            <option>全部</option>
+                          </select>
+                        </div>
+                        <div class="uk-width-4-10 uk-width-small-5-10">
+                          <input id="search" class="bg_whiteOpacity9 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
+                        </div>
+                        <div class="uk-width-3-10 uk-width-small-2-10">
+                          <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
+                        </div>
+                      </div>
+                      <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">science</a></span><span class="commaCH"><a class="linkline" href="#" title="#">華藝</a></span><span class="commaCH"><a class="linkline" href="#" title="#">nature</a></span></p>
+                    </li>
+                    <li>
+                      <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
+                        <div class="uk-width-3-10 uk-width-small-3-10">
+                          <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search">
+                            <option>全部</option>
+                          </select>
+                        </div>
+                        <div class="uk-width-4-10 uk-width-small-5-10">
+                          <input id="search" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
+                        </div>
+                        <div class="uk-width-3-10 uk-width-small-2-10">
+                          <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
+                        </div>
+                      </div>
+                      <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">生物</a></span><span class="commaCH"><a class="linkline" href="#" title="#">月旦</a></span><span class="commaCH"><a class="linkline" href="#" title="#">中國</a></span></p>
+                    </li>
+                    <li>
+                      <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
+                        <div class="uk-width-3-10 uk-width-small-3-10">
+                          <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search">
+                            <option>全部</option>
+                          </select>
+                        </div>
+                        <div class="uk-width-4-10 uk-width-small-5-10">
+                          <input id="search" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
+                        </div>
+                        <div class="uk-width-3-10 uk-width-small-2-10">
+                          <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
+                        </div>
+                      </div>
+                      <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">CNKI</a></span><span class="commaCH"><a class="linkline" href="#" title="#">Democracy</a></span><span class="commaCH"><a class="linkline" href="#" title="#">Web of science</a></span></p>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <!-- .tabBar_switcher -->
-          </form>
+              <!-- .tabBar_switcher -->
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -366,8 +368,9 @@
     <!-- .uk-container -->
   </div>
   <!-- .bg_img -->
-  <footer class="bg_darkestGrey">
-    <div class="uk-container uk-container-center paddingT_large paddingB_large">
+  <footer class="uk-position-relative">
+    <div class="bg_darkestGrey opacity90 uk-overlay-panel uk-padding-remove"></div>
+    <div class="uk-container uk-container-center uk-position-relative paddingT_large paddingB_large">
       <ul class="uk-grid uk-grid-small" data-uk-grid-margin>
         <li class="text_center_medium_left uk-width-medium-1-5 uk-width-xlarge-1-10"><a class="logo footer_logo uk-width-1-4 uk-width-medium-2-3 uk-width-large-3-5 uk-width-xlarge-9-10" href="http://www.flysheet.com.tw/" title="FlySheet"><img src="img/logo.svg" title="FlySheet"></a></li>
         <li class="color_white text_center_sL uk-width-medium-4-5 uk-width-xlarge-5-10">
